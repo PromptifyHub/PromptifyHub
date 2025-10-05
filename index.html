@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptify Hub - Your Ultimate AI Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons (optional, but good for professional look) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (Top Bar) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Promptify Hub</div>
+            <div class="search-bar">
+                <input type="text" id="tool-search" placeholder="Search for tools...">
+                <i class="fas fa-search"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1>Unlock Your Creativity with 100+ AI Prompt Generators!</h1>
+            <p>Whether you're an artist, writer, marketer, or content creator, find the perfect prompt to ignite your imagination. Generate prompts from photos, documents, and videos!</p>
+            <a href="#tools" class="btn-primary">Explore Our Tools</a>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2>Our Powerful Prompt Generators</h2>
+
+            <!-- Category: AI Art & Image Prompts -->
+            <div class="tool-category">
+                <h3>AI Art & Image Prompts</h3>
+                <div class="tool-grid">
+                    <!-- Tool Card 1: Image to Prompt -->
+                    <div class="tool-card" data-keywords="image to prompt, ai art, reverse prompting, image analysis">
+                        <h4>Image to Prompt</h4>
+                        <p>Upload an image and get detailed AI art prompts.</p>
+                        <input type="file" accept="image/*" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Tool Card 2: Fantasy Art Prompt Generator -->
+                    <div class="tool-card" data-keywords="fantasy art, mythical creatures, magic, epic">
+                        <h4>Fantasy Art Prompt Generator</h4>
+                        <p>Generate epic prompts for dragons, wizards, and magical landscapes.</p>
+                        <input type="text" placeholder="e.g., forest, knight, castle" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Add more AI Art tools here following the same structure -->
+                    <!-- Placeholder for more AI Art tools -->
+                    <div class="tool-card" data-keywords="sci-fi art, futuristic, spaceships, aliens">
+                        <h4>Sci-Fi Art Prompt Generator</h4>
+                        <p>Prompts for futuristic cities, spaceships, alien creatures.</p>
+                        <input type="text" placeholder="e.g., cyberpunk city, space battle" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                    <div class="tool-card" data-keywords="character design, hero, villain, creature">
+                        <h4>Character Design Prompt</h4>
+                        <p>Detailed prompts for creating unique characters.</p>
+                        <input type="text" placeholder="e.g., warrior, mage, robot" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <div class="tool-card" data-keywords="pixel art, retro, game art">
+                        <h4>Pixel Art Prompt Generator</h4>
+                        <p>Prompts specifically for generating pixel art.</p>
+                        <input type="text" placeholder="e.g., retro platformer, arcade scene" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Content & Writing Prompts -->
+            <div class="tool-category">
+                <h3>Content & Writing Prompts</h3>
+                <div class="tool-grid">
+                    <!-- Tool Card 1: Blog Post Idea Generator -->
+                    <div class="tool-card" data-keywords="blog post ideas, content writing, article topics">
+                        <h4>Blog Post Idea Generator</h4>
+                        <p>Creates engaging blog topic ideas based on your keywords.</p>
+                        <input type="text" placeholder="e.g., digital marketing, healthy eating" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Tool Card 2: Headline Generator -->
+                    <div class="tool-card" data-keywords="headline generator, catchy titles, ad copy">
+                        <h4>Headline Generator</h4>
+                        <p>Generate catchy headlines for blogs, articles, and ads.</p>
+                        <input type="text" placeholder="e.g., productivity tips, new product" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Add more Content & Writing tools here -->
+                    <!-- Placeholder for more Writing tools -->
+                    <div class="tool-card" data-keywords="social media post, facebook, instagram, twitter">
+                        <h4>Social Media Post Generator</h4>
+                        <p>Ideas for engaging Facebook, Instagram, Twitter, LinkedIn posts.</p>
+                        <input type="text" placeholder="e.g., new product launch, holiday wishes" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <div class="tool-card" data-keywords="story plot, novel, screenplay, short story">
+                        <h4>Story Plot Generator</h4>
+                        <p>Ideas for novels, short stories, and screenplays.</p>
+                        <input type="text" placeholder="e.g., fantasy, mystery, romance" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <div class="tool-card" data-keywords="email subject line, marketing email, open rate">
+                        <h4>Email Subject Line Generator</h4>
+                        <p>High-open-rate subject lines for marketing emails.</p>
+                        <input type="text" placeholder="e.g., newsletter, discount offer" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Document & Data Extraction Prompts -->
+            <div class="tool-category">
+                <h3>Document & Data Extraction Prompts</h3>
+                <div class="tool-grid">
+                    <!-- Tool Card 1: Document Summary Prompt -->
+                    <div class="tool-card" data-keywords="document summary, text summarizer, report analysis">
+                        <h4>Document Summary Prompt</h4>
+                        <p>Upload a document and get a concise summary.</p>
+                        <input type="file" accept=".pdf,.doc,.docx,.txt" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Tool Card 2: Keyword Extraction Prompt -->
+                    <div class="tool-card" data-keywords="keyword extractor, text analysis, seo keywords">
+                        <h4>Keyword Extraction Prompt</h4>
+                        <p>Upload text and extract key keywords and phrases.</p>
+                        <input type="file" accept=".pdf,.doc,.docx,.txt" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <!-- Placeholder for more Document tools -->
+                    <div class="tool-card" data-keywords="faq generator, common questions, customer service">
+                        <h4>FAQ Section Generator</h4>
+                        <p>Common questions and answers for any topic.</p>
+                        <input type="text" placeholder="e.g., product features, company info" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <div class="tool-card" data-keywords="resume skill extractor, job application, cv analysis">
+                        <h4>Resume Skill Extractor</h4>
+                        <p>Upload a resume and extract relevant skills.</p>
+                        <input type="file" accept=".pdf,.doc,.docx,.txt" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Video & Audio Prompts -->
+            <div class="tool-category">
+                <h3>Video & Audio Prompts</h3>
+                <div class="tool-grid">
+                    <!-- Tool Card 1: YouTube Description Generator -->
+                    <div class="tool-card" data-keywords="youtube description, video seo, content creation">
+                        <h4>YouTube Description Generator</h4>
+                        <p>Generate SEO-friendly descriptions for your YouTube videos.</p>
+                        <input type="url" placeholder="Paste YouTube video link..." class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+
+                    <!-- Tool Card 2: TikTok Script Idea Generator -->
+                    <div class="tool-card" data-keywords="tiktok script, video ideas, trending content">
+                        <h4>TikTok Script Idea Generator</h4>
+                        <p>Get trending video ideas and script outlines for TikTok.</p>
+                        <input type="text" placeholder="e.g., comedy sketch, dance challenge" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <!-- Placeholder for more Video tools -->
+                    <div class="tool-card" data-keywords="podcast topic, episode ideas, audio content">
+                        <h4>Podcast Topic Idea Generator</h4>
+                        <p>Prompts for engaging podcast episodes.</p>
+                        <input type="text" placeholder="e.g., tech news, true crime, interviews" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                     <div class="tool-card" data-keywords="video hook, engaging intro, youtube hooks">
+                        <h4>Video Hook Generator</h4>
+                        <p>Ideas for captivating video intros to grab viewer attention.</p>
+                        <input type="text" placeholder="e.g., gaming, tutorial, vlog" class="tool-input">
+                        <button class="btn-secondary">Generate</button>
+                        <div class="tool-output"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- More categories and tools can be added here following the same structure -->
+
+        </div>
+    </section>
+
+    <!-- Contact Section (Optional, can be a simple form or just links) -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <p>Or email us directly at: <a href="mailto:contact@promptifyhub.com">contact@promptifyhub.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2023 Promptify Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
